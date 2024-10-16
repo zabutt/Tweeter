@@ -6,7 +6,7 @@ def generate_tweet(prompt, image_url, gemini_api_key):
     url = "https://api.openai.com/v1/engines/text-davinci-003/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {AIzaSyDa7tTO-H2l1OqNbhVK4r6I_1hTcdhXi58}"
+        "Authorization": f"Bearer {gemini_api_key}"
     }
     data = {
         "prompt": f"Generate a tweet based on the prompt: \"{prompt}\". Include a relevant image link: \"{image_url}\".",
